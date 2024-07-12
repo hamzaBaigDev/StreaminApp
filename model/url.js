@@ -9,7 +9,6 @@ const urlSchema = new mongoose.Schema({
         type: String,
         required: 'Required',
     },
-
     image:{
         type: String,
         required: 'Required',
@@ -17,6 +16,13 @@ const urlSchema = new mongoose.Schema({
     created_date: {
         type: String,
     },
+    is_active:{
+        type: Boolean,
+        default : true
+    },
+    updated_date:{
+        type: String,
+    }
 }, {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }
 });
