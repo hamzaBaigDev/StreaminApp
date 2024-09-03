@@ -1,4 +1,4 @@
-const signUp = require("./Auth");
+const signUp = require("./auth");
 const url = require("./url")
 
 
