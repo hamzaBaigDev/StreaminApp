@@ -2,6 +2,7 @@ const db = require("../model");
 const moment = require('moment');
 const fs = require('fs');
 const mongoose = require('mongoose');
+const AWS = require('aws-sdk');
 
 exports.getDate = () => {
   let date = new Date();
