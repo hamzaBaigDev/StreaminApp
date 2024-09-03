@@ -1,7 +1,6 @@
 const db = require("../model");
 const moment = require('moment');
 const fs = require('fs');
-const AWS = require('aws-sdk');
 const mongoose = require('mongoose');
 
 exports.getDate = () => {
