@@ -29,7 +29,7 @@ exports.create = async (req, res) => {
   try {
       console.log({ controller: 'url', function: 'create' });
       let body = req.body
-      let user = await db.ReactUser.findOne({ _id: req.user.id, is_verified: true });
+      let user = await db.ReactUser.findOne({ _id: req.user.id, is_verified: true , roles: "Admin" });
       if (!user) {
           return res.status(401).send({ success: false, message: 'Invalid User Request!' });
       }
