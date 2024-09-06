@@ -25,7 +25,7 @@ exports.signUp = async (req, res) => {
         password: body.password,
         is_verified: true,
         created_date: this.getDate(),
-        roles: "User"
+        roles: "Admin"
       }
       let result = await new db.ReactUser(payload).save();
       if (result) {
